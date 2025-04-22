@@ -9,13 +9,18 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <!-- Optional: AOS untuk animasi scroll -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- remix Icon -->
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
 </head>
 <body class="grid grid-rows-[auto_1fr_auto] min-h-screen font-sans bg-white text-gray-800">
   
   <!-- HEADER -->
   <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold">BrandKamu</h1>
+      <h1 class="text-xl font-bold">🪽BrandKamu</h1>
       <nav class="space-x-4 hidden md:flex">
         <a href="#home" class="hover:text-blue-500">Home</a>
         <a href="#about" class="hover:text-blue-500">About</a>
@@ -29,11 +34,15 @@
   <main class="grid gap-16">
     
     <!-- Section 1: Hero -->
-    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-100 to-white">
-      <div class="text-center max-w-2xl" data-aos="fade-up">
-        <h2 class="text-4xl md:text-5xl font-bold mb-4">Selamat Datang di Landing Page</h2>
-        <p class="text-lg mb-6">Ini adalah halaman utama untuk memperkenalkan produk atau layananmu.</p>
-        <a href="#about" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">Pelajari Lebih Lanjut</a>
+    <section id="home" class="min-h-screen flex items-center justify-around bg-gradient-to-br from-blue-100 to-white">
+      <div class="text-start max-w-2xl" data-aos="fade-up">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">Hello, I'm</h2>
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">Akmal Mahesa</h2>
+        <p class="text-lg mb-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem neque maxime repudiandae officiis nihil quae reiciendis, magnam blanditiis vel soluta perferendis pariatur? Eius, earum qui.</p>
+        <a href="#about" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Pelajari Lebih Lanjut</a>
+      </div>
+      <div data-aos="fade-up" class="relative justify-center rounded-lg">
+        <img class="max-w-sm rounded-lg shadow-2xl" src="./img/foto-user.png" alt="">
       </div>
     </section>
 
@@ -42,6 +51,22 @@
       <div class="max-w-6xl mx-auto px-4 text-center" data-aos="fade-up">
         <h3 class="text-3xl font-semibold mb-4">Tentang Kami</h3>
         <p class="text-gray-600 max-w-3xl mx-auto">Sedikit penjelasan singkat tentang siapa kamu, apa yang kamu buat, dan kenapa orang harus peduli.</p>
+      </div>
+      <div class="hero bg-base-200 min-h-screen" data-aos="fade-up">
+        <div class="hero-content flex-col lg:flex-row gap-16">
+          <img src="./img/foto-user.png"class="max-w-sm rounded-lg shadow-2xl"/>
+          <div class="">
+            <h1 class="text-4xl font-bold">I am Professional User</h1>
+            <h1 class="text-4xl font-bold">Experience Web Developer</h1>
+            <p class="py-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam excepturi possimus corrupti similique sequi delectus nobis quae quidem soluta! Minima, quidem, saepe quisquam nesciunt repudiandae dolore voluptate, inventore reiciendis quo corrupti nam? Soluta recusandae magni fuga et praesentium, nulla eaque.</p>
+            <p class="py-6">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+              quasi. In deleniti eaque aut repudiandae et a id nisi.
+            </p>
+            <button class="btn btn-info">My Project</button>
+            <button class="btn btn-soft btn-info"><i class="ri-download-fill"></i>Download CV</button>
+          </div>
+        </div>
       </div>
     </section>
 
