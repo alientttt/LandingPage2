@@ -27,6 +27,19 @@
         <a href="#features" class="hover:text-blue-500">Features</a>
         <a href="#contact" class="hover:text-blue-500">Contact</a>
       </nav>
+      <!-- Tambahkan tombol menu untuk mobile -->
+<div class="md:hidden">
+  <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+    ☰
+  </button>
+</div>
+<!-- Menu dropdown untuk mobile -->
+<div id="mobile-menu" class="hidden md:hidden mt-2 space-y-2">
+  <a href="#home" class="block text-gray-800 hover:text-blue-500">Home</a>
+  <a href="#about" class="block text-gray-800 hover:text-blue-500">About</a>
+  <a href="#features" class="block text-gray-800 hover:text-blue-500">Features</a>
+  <a href="#contact" class="block text-gray-800 hover:text-blue-500">Contact</a>
+</div>
     </div>
   </header>
 
@@ -34,7 +47,7 @@
   <main class="grid gap-16">
     
     <!-- Section 1: Hero -->
-    <section id="home" class="min-h-screen flex items-center justify-around bg-gradient-to-br from-blue-100 to-white">
+    <section id="home" class="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center px-4 text-center md:text-start gap-8">
       <div class="text-start max-w-2xl" data-aos="fade-up">
         <h2 class="text-4xl md:text-5xl font-bold mb-4">Hello, I'm</h2>
         <h2 class="text-4xl md:text-5xl font-bold mb-4">Akmal Mahesa</h2>
@@ -74,7 +87,7 @@
     <section id="features" class="py-20 bg-white">
       <div class="max-w-6xl mx-auto px-4" data-aos="fade-up">
         <h3 class="text-3xl font-semibold text-center mb-12">Fitur Unggulan</h3>
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           <div class="bg-blue-50 p-6 rounded-lg shadow-sm text-center">
             <h4 class="font-bold text-lg mb-2">Fitur 1</h4>
             <p class="text-gray-600">Deskripsi singkat fitur pertama.</p>
@@ -104,7 +117,7 @@
     <section id="contact" class="py-20 bg-gray-50">
       <div class="max-w-xl mx-auto px-4" data-aos="fade-up">
         <h3 class="text-3xl font-semibold text-center mb-6">Contact Me</h3>
-        <form class="space-y-4">
+        <form class="space-y-4 w-full max-w-md mx-auto">
           <input type="text" placeholder="Nama" class="w-full border px-4 py-2 rounded-md">
           <input type="email" placeholder="Email" class="w-full border px-4 py-2 rounded-md">
           <textarea rows="5" placeholder="Pesan" class="w-full border px-4 py-2 rounded-md"></textarea>
@@ -116,7 +129,7 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="footer sm:footer-horizontal bg-base-300 text-base-content p-10">
+  <footer class="bg-base-300 text-base-content p-10 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center sm:text-start">
     <nav>
       <h6 class="footer-title">Services</h6>
       <a class="link link-hover">Branding</a>
@@ -176,5 +189,6 @@
   <script>
     AOS.init();
   </script>
+  <script src="brain.js"></script>
 </body>
 </html>
